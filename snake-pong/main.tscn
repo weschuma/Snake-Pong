@@ -1,7 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://odnd58a16bu5"]
+[gd_scene format=3 uid="uid://odnd58a16bu5"]
 
-[ext_resource type="PackedScene" uid="uid://odnd58a16bu5" path="res://main.tscn" id="1_ig7tw"]
-
-[node name="main" instance=ExtResource("1_ig7tw")]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+[node name="main" type="Node2D"]
