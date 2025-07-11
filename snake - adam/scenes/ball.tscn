@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjwpcraubmfvg"]
+
+[ext_resource type="Script" uid="uid://uqqx0vpms3oq" path="res://scenes/ball.gd" id="1_7s4qf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n1dj2"]
+radius = 50.0
+
+[node name="Ball" type="CharacterBody2D"]
+script = ExtResource("1_7s4qf")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+top_level = true
+color = Color(0, 0.870522, 0.870521, 1)
+polygon = PackedVector2Array(0, -50, 50, 0, 0, 50, -50, 0)
+polygons = [PackedInt32Array(0, 3, 2, 1), PackedInt32Array(2, 0, 3, 1), PackedInt32Array(5, 0, 4), PackedInt32Array(4, 3, 0)]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+modulate = Color(0, 1, 1, 1)
+self_modulate = Color(0, 1, 1, 1)
+top_level = true
+shape = SubResource("CircleShape2D_n1dj2")
