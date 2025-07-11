@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1752259649
+icon.svg::CompressedTexture2D/CompressedTexture2D::4649478459007169893::1751047827::1752259650::1::::<><><>0<>0<>bc7bf6a72177e31f12090093aa3a1b5f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Scenes/::1752259148
+Apple.tscn::PackedScene::2329793328021009321::1752259147::0::1::::<><><>0<>0<><>::
+Arena.tscn::PackedScene::558859857137580029::1752259147::0::1::::<><><>0<>0<><>::uid://ipwbb0hdcbif::::res://Scripts/Arena.gd
+Game.tscn::PackedScene::3844941728060692309::1752259147::0::1::::<><><>0<>0<><>::uid://h7yltjc8f3gj::::res://Scenes/Arena.tscn
+Snake.tscn::PackedScene::6443813203614660112::1752259148::0::1::::<><><>0<>0<><>::uid://dcph15404rb8f::::res://Scripts/Snake.gd
+::res://Scripts/::1752259148
+Arena.gd::GDScript::593814066515520377::1752259148::0::1::::<>Node2D<><>0<>0<><>::
+Global.gd::GDScript::2162061335612134570::1752259148::0::1::::<>Node<><>0<>0<><>::
+Snake.gd::GDScript::7331078475932299299::1752259148::0::1::::<>Node2D<><>0<>0<><>::
