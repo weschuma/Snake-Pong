@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu1rvms5b7qf2"]
+
+[ext_resource type="PackedScene" uid="uid://cx2owrjwwhm7i" path="res://Scenes/Snake.tscn" id="1_j5yw3"]
+[ext_resource type="PackedScene" uid="uid://8gtmdhoyh6dp" path="res://Scenes/Apple.tscn" id="2_gl6un"]
+[ext_resource type="Script" uid="uid://dcph15404rb8f" path="res://Scripts/Snake.gd" id="2_j5yw3"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Snake" parent="." instance=ExtResource("1_j5yw3")]
+script = ExtResource("2_j5yw3")
+GRID_DIMENSIONS = Vector2(50, 50)
+TILE_SIZE = 10
+
+[node name="Apple" parent="." instance=ExtResource("2_gl6un")]

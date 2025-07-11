@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx2owrjwwhm7i"]
+
+[sub_resource type="GDScript" id="GDScript_01q3b"]
+
+[node name="Snake" type="Node2D"]
+script = SubResource("GDScript_01q3b")
