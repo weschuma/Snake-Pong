@@ -12,9 +12,15 @@ var score : int
 var game_started : bool = false
 
 
-#grid variables // fix, maybe 1 var is cellsx and one is cellsy, prevent dying early and food spawning off screen
-var cells : int = 40
+
+
+
+## Grid variables
+var cells_x : int = 48  # 1920 / 40 = 48
+var cells_y : int = 26  # 1080 / 40 = 27
 var cell_size : int = 40
+
+
 
 #food var
 var food_pos: Vector2
@@ -131,7 +137,7 @@ func _on_move_timer_timeout() -> void:
 	check_food_eaten()
 
 func check_out_of_bounds():
-	if snake_data[0].x < 0 or snake_data[0].x > cells - 1 or snake_data[0].y < 0 or snake_data[0].y > cells - 1:
+	if snake_data[0].x < 0 or snake_data[0].x >= cells_x or snake_data[0].y < 0 or snake_data[0].y >= cells_y:
 		end_game()
 		
 func check_self_eaten():
@@ -155,7 +161,7 @@ func check_food_eaten():
 func move_food():
 	while regen_food:
 		regen_food = false
-		food_pos = Vector2(randi_range(0, cells - 1), randi_range(0, cells - 1))
+		food_pos = Vector2(randi_range(0, cells_x - 1), randi_range(0, cells_y - 1))
 		for i in snake_data:
 			if food_pos == i:
 				regen_food = true
