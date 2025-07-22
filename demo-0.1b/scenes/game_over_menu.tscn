@@ -52,6 +52,8 @@ offset_right = 44.0
 offset_bottom = 106.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 text = "Play Again"
 
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]

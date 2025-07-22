@@ -16,7 +16,7 @@ width = 262
 [sub_resource type="CanvasTexture" id="CanvasTexture_sugp2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
-size = Vector2(677.5, 1197)
+size = Vector2(677.5, 2413.25)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_sugp2")
@@ -25,9 +25,9 @@ ball_scene = ExtResource("3_tefeu")
 
 [node name="Background" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(550, 538.974)
+position = Vector2(967, 514)
 rotation = -1.5708
-scale = Vector2(4.13577, 1190.91)
+scale = Vector2(4.49653, 2124.98)
 texture = SubResource("GradientTexture1D_o6xl0")
 
 [node name="Hud" parent="." instance=ExtResource("3_tbgi4")]
@@ -37,13 +37,12 @@ wait_time = 0.1
 
 [node name="Food" type="Sprite2D" parent="."]
 modulate = Color(0.787569, 0.787569, 0, 1)
-scale = Vector2(50, 50)
+scale = Vector2(40, 40)
 texture = SubResource("CanvasTexture_sugp2")
 centered = false
 
 [node name="GameOverMenu" parent="." instance=ExtResource("4_jyhfs")]
 process_mode = 2
-visible = false
 
 [node name="Ball" parent="." instance=ExtResource("5_tbgi4")]
 
@@ -54,16 +53,16 @@ position = Vector2(-270, 538)
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="TemporaryWalls"]
-position = Vector2(1405, 525)
+position = Vector2(2206, 508)
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="TemporaryWalls"]
-position = Vector2(526, 1415)
+position = Vector2(736.375, 1415)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TemporaryWalls"]
-position = Vector2(543, -356)
+position = Vector2(940.75, -326.999)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_tefeu")
 

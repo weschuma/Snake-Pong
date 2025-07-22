@@ -12,9 +12,9 @@ var score : int
 var game_started : bool = false
 
 
-#grid variables
-var cells : int = 20
-var cell_size : int = 50
+#grid variables // fix, maybe 1 var is cellsx and one is cellsy, prevent dying early and food spawning off screen
+var cells : int = 40
+var cell_size : int = 40
 
 #food var
 var food_pos: Vector2
